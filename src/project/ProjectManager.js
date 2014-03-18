@@ -1812,7 +1812,7 @@ define(function (require, exports, module) {
                 _projectTree.jstree("rename");
 
                 var indexOfExtension = escapedName.lastIndexOf("."),
-                    language = LanguageManager.getLanguageForPath(escapedName);
+                    language = LanguageManager.getLanguageForPath(entry.name);
                 if (language) {
                     language.getFileExtensions().forEach(function (ext) {
                         var io = escapedName.lastIndexOf("." + ext);
